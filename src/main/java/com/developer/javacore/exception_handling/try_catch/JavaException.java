@@ -1,12 +1,18 @@
 package com.developer.javacore.exception_handling.try_catch;
 
 /*
-Exception handling in Java is a mechanism to deal with runtime errors or exceptional
- situations that may occur during the execution of a program.
-These exceptional situations, represented by objects of classes derived from the Throwable
- class, can be due to various reasons such as invalid input, network issues, file not found,
-  etc. Handling exceptions allows programmers to write robust code that can gracefully
-  handle errors and prevent the program from crashing.
+What Is an Exception in Java?
+An exception (or exceptional event) is a problem that arises during the execution of a program.
+When an Exception occurs the normal flow of the program is disrupted and the program/Application terminates abnormally,
+which is not recommended, therefore, these exceptions are to be handled.
+Why Exception Occurs?
+An exception can occur for many different reasons.
+Following are some scenarios where an exception occurs.
+A user has entered an invalid data.
+A file that needs to be opened cannot be found.
+A network connection has been lost in the middle of communications or the JVM has run out of memory.
+Some of these exceptions are caused by user error, others by programmer error,
+and others by physical resources that have failed in some manner.
 * */
 public class JavaException {
     public static void main(String[] args) {
