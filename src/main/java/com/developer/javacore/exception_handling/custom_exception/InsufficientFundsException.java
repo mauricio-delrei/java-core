@@ -28,7 +28,7 @@ public class InsufficientFundsException extends Exception{
     An exception class is like any other class, containing useful fields and methods.
     * */
 
-    private double amount;
+    private final double amount;
 
     public InsufficientFundsException(double amount){
         this.amount = amount;

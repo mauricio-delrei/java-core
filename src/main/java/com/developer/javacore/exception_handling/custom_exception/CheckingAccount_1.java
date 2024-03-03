@@ -4,11 +4,11 @@ package com.developer.javacore.exception_handling.custom_exception;
 To demonstrate using our user-defined exception, the following CheckingAccount class
  contains a withdraw() method that throws an InsufficientFundsException.
 * */
-public class CheckingAccount {
+public class CheckingAccount_1 {
     private double balance;
     private int number;
 
-    public CheckingAccount(int number) {
+    public CheckingAccount_1(int number) {
         this.number = number;
     }
 
@@ -16,12 +16,12 @@ public class CheckingAccount {
         balance += amount;
     }
 
-    public void withdraw(double amount) throws InsufficientFundsException {
+    public void withdraw(double amount) {
         if (amount <= balance) {
             balance -= amount;
         } else {
             double needs = amount - balance;
-            throw new InsufficientFundsException(needs);
+            throw new InsufficientFundsException_1(needs);
         }
     }
 
