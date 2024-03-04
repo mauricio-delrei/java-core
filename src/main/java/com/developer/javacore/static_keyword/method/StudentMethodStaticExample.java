@@ -11,18 +11,30 @@ public class StudentMethodStaticExample {
 
     int rollNumber;
     String name;
-   static String college = "ITS";
+    static String college = "ITS";
 
     //static method to change the value of static variable
-    static void change(){
+    static void change() {
         college = "BBDIT";
     }
+
     //constructor to initialize the variable
-    StudentMethodStaticExample(int rollNumber,String name){
+    StudentMethodStaticExample(int rollNumber, String name) {
         this.rollNumber = rollNumber;
         this.name = name;
     }
-    //method to display values
-    void display(){System.out.println(rollNumber+" "+name+" "+college);}
 
+    //method to display values
+    void display() {
+        System.out.println(rollNumber + " " + name + " " + college);
+    }
+
+    @Override
+    public String toString() {
+        return "Student: {" +
+                "rollNumber=" + rollNumber +
+                "name=" + name +
+                ", college='" + college + '\'' +
+                '}';
+    }
 }

@@ -9,7 +9,15 @@ public class StudentMethodStaticExampleTest {
         StudentMethodStaticExample student2 = new StudentMethodStaticExample(222,"Ju Eugenia");
         StudentMethodStaticExample student3 = new StudentMethodStaticExample(333,"Pedro Henrique Del Rei");
         StudentMethodStaticExample student4 = new StudentMethodStaticExample(444,"Maria Eugenia Del Rei");
-        //StudentMethodStaticExample.change();//calling change method
+
+        System.out.println(student.toString());
+        System.out.println(student2.toString());
+        System.out.println(student3.toString());
+        System.out.println(student4.toString());
+
+        System.out.println("\nCalling change method");
+
+        StudentMethodStaticExample.change();//calling change method
 
         //calling display method
         student.display();
